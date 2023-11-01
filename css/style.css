@@ -296,7 +296,7 @@ body {
     text-align: center;
     flex-direction: column;
     gap: 30px;
-    max-width: 1290px;
+    padding: 175px;
 }
 .offer-title {
     color: #8bffb0;
@@ -324,30 +324,97 @@ body {
 }
 .offer-img {
     max-width: 940px;
-    padding: 70px 175px;
 }
-@media screen and (max-width: 600px) {
-    .block__img-wrap {
-        flex-direction: column;
+.lesson {
+    background: #121118;
+}
+.lesson__content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.lesson__info {
+    max-width: 1120px;
+    min-height: 433px;
+    background: #1d1b24;
+    text-align: center;
+    border-radius: 30px;
+    margin: 60px 160px -38px;
+}
+.lesson-title {
+    color: #fff;
+    text-align: center;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 91px;
+    letter-spacing: 2.1px;
+}
+.lesson-text {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.4px;
+    letter-spacing: 0.42px;
+    padding: 0 0 40px 0;
+}
+.lesson-btn {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 26.4px;
+    letter-spacing: 0.42px;
+    background: #ff4343;
+    display: inline-flex;
+    padding: 3px 11px;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    gap: 19px;
+}
+
+@media screen and (max-width: 1034px) {
+    .hero-title {
+        font-size: 60px;
     }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1237px) {
     .header__nav {
         display: none;
     }
 }
-@media screen and (max-width: 775px) {
-    .hero-title {
-        font-size: 68px;
-    }
-}
-@media screen and (max-width: 360px) {
-    .ideas__img-wrap {
+
+@media screen and (max-width: 1269px) {
+    .hero__content {
+        display: flex;
         flex-direction: column;
     }
-}
-@media screen and (max-width: 360px) {
-    .elements-img {
+    .block__info {
+        display: none;
+    }
+    .block__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .ideas__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .elements__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .start__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .craft__img-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__content {
+        display: flex;
         flex-direction: column;
     }
 }
